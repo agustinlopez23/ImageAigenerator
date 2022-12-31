@@ -1,11 +1,11 @@
 const path = require("path");
 const express = require("express");
-const dotenv = require("dotenv").config();
+const dotenv = require("dotenv");
 const port = process.env.PORT || 3001;
 
 const app = express();
 //enviroments
-dotenv();
+dotenv.config();
 //enable body parser
 
 app.use(express.json());
