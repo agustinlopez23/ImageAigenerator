@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+    <title>AI Image Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="visually-hidden">Headers examples</h1>
+
+      <div class="container">
+        <header
+          class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap" />
+            </svg>
+            <span class="fs-4">Open Ai Image Generator</span>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a
+                href="https://beta.openai.com/docs"
+                target="_blank"
+                class="nav-link link-secondary"
+                >OpenAI API Docs</a
+              >
+            </li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="b-example-divider"></div>
+      
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="showcase d-flex justify-content-center">
+        <form id="image-form" class="d-flex">
+          <h1>What do you wanna search?</h1>
+          <div class="form-control">
+            <input type="text" id="prompt" placeholder="Enter Text" class="form-control"/>
+          </div>
+          <!-- size -->
+          <div class="form-control">
+            <select name="size" id="size" class="form-select">
+              <option value="small">Small</option>
+              <option value="medium" selected>Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-dark">Generate</button>
+        </form>
+      </section>
+
+      <section class="image" style="min-height:calc(100vh - 560px);">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+          <img src="" alt="" id="image" />
+        </div>
+      </section>
+    </main></div>
+      
+
+    <div class="spinner"></div>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 GodBye</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              href="https://agustinlopezdev.com/"
+              target="_blank"
+              >AgustinLopezDev</a
+            >
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              href="https://github.com/agustinlopez23/ImageAigenerator"
+              target="_blank"
+              ><img src="./assets//github-logo.png" alt="github link"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
